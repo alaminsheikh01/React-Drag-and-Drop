@@ -11,6 +11,7 @@ const Picture = ({ url, id }) => {
   return (
     <div>
       <img
+        ref={drag}
         src={url}
         width="150px"
         style={{ border: isDragging ? "5px solid pink" : "0px" }}
